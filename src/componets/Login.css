@@ -1,0 +1,66 @@
+.login__wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.login__logo{
+    width: 100px;
+    object-fit: contain;
+}
+.sign__in__container{
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    
+}
+.login__input__container input{
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    outline-color:#e4b94d;
+    border-radius: 3px;
+}
+.login__input__container label{
+    display: block;
+    padding: 12px;
+}
+.sign__in__container button{
+    width: 96%;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-radius: 3px;
+    background-color: #e4b94d;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.signin__header{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.signin__privacy{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.login__signup{
+    width: 96%;
+    padding: 5px;
+    margin: 10px;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 400;
+}
+.create__act__text{
+    width: 98%;
+    margin: 0 auto;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
