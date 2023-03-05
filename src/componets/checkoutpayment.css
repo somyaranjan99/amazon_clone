@@ -1,0 +1,122 @@
+.checkoutpayment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.delivery__address,.review__items,.payment__method{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color: #fff;
+    width: 96%;
+    padding: 10px;
+}
+.delivery__address h2,.review__items h2,.payment__method h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+.chkpayment__toggle{
+    transition: height 2s;
+}
+.checkout__payment__items{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 10px;
+} 
+.checkoutpayment__items__wrapper{
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.checkoutpayment__image{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.checkoutpayment__rating{
+    display: flex;
+}
+.checkoutpayment__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.card__number__cvv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+.card__cvv_align{
+    display: flex;
+    flex-direction: row;
+
+}
+.checkout__payment__btn{
+    padding: 5px;
+    background-color: #a88734;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.checkoutpayment__payment__method{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+}
+.card__details{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+
+}
+/* .card__details input{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 10px;
+    outline: none;
+} */
+.card__details label{
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.card__cvv_align{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+#cvv{
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 10px;
+    outline: none;
+
+}
+#expiredate{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 10px;
+    outline: none;
+}
+.totalprice{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+
+}

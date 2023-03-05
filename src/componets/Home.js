@@ -1,13 +1,18 @@
 import React from 'react'
 import './Home.css';
 import Product from './Product';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
  const Home = () => {
 
 
   return (
     <>
     <div className='home__container'>
+    <Carousel infiniteLoop
+          autoPlay
+          stopOnHover
+          interval={1000} showThumbs={false}>
       <div className='home__image_container'>
           <img
           className="home__image"
@@ -15,7 +20,14 @@ import Product from './Product';
           alt="homeImg"
         />
         </div>
-      
+        <div className='home__image_container'>
+          <img
+          className="home__image"
+          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          alt="homeImg"
+        />
+        </div>
+      </Carousel>
     </div>
         
     <div className='products'>

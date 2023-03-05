@@ -2,6 +2,8 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #6d6a6a;
+  
 }
 
 .checkoutProduct__info {
@@ -14,6 +16,7 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+   
 }
 
 .checkoutProduct__image {
@@ -32,4 +35,19 @@
 }
 .checkout__product{
     flex: 1;
+}
+.empty__cart__page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+.checkout__user{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid #6d6a6a;
 }

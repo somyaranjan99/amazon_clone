@@ -7,7 +7,7 @@
     z-index: 1;
     gap: 10px;
     margin-bottom: 20px;
-    
+    box-shadow: 5px 5px 10px #6d6a6a;
 }
 .product__container{
     background-color: #fff;

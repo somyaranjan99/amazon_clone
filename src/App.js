@@ -5,9 +5,15 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Checkoutpage from './componets/Checkoutpage';
 import Login from './componets/Login';
 import { auth } from './componets/Firebase';
-import {useGlobalContex} from './componets/Context'
+import {useGlobalContex} from './componets/Context';
+import Checkoutpayment from './componets/Checkoutpayment';
+import {loadStripe} from '@stripe/stripe-js';
+import {
+  Elements
+} from '@stripe/react-stripe-js';
 function App() {
-  const {dispatch}=useGlobalContex();
+  const {user,dispatch}=useGlobalContex();
+  const stripePromise= loadStripe('pk_test_51Mh5hgSCpGq4zLI3rjdv1ZfbvyssBVpJ9NqqNJWgnjrU9edtp7lI4gUvNM7doXioDWEFNfkE7tPKRxCgSOdEjmcR00VNIVbNRi');
  useEffect(()=>{
     auth.onAuthStateChanged(authUser=>{
       if(authUser){
@@ -21,7 +27,7 @@ function App() {
           user:null
         })
       }
-      console.log('User is Loddedin',authUser);
+     
     })
  },[])
   return (
@@ -31,6 +37,9 @@ function App() {
     <Routes>
       <Route exact path='/' element={ <Home />} /> 
       <Route exact path='/checkout' element={ <Checkoutpage />} />
+      <Route exact path='/checkoutpayment' element={user ?
+      <Elements stripe={stripePromise}><Checkoutpayment /></Elements>
+      :<Home/>} />
       <Route path='login' element={<Login />} />
     </Routes>
     </BrowserRouter>

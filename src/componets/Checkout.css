@@ -10,6 +10,8 @@
 }
 .checkout__payment{
     width: 15%;
+    display: flex;
+    flex-direction: column;
     
 }
 .total__items,.total__item__price{
@@ -26,4 +28,14 @@
 }
 .checkout__itemscount{
     margin-top: 20px;
+ 
+}
+.checkout__items_btn{
+    background-color: #a88734 ;
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: #a88734;
+    
 }

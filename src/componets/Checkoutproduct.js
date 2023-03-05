@@ -6,6 +6,7 @@ function Checkoutproduct({id,image,title,price,rating}) {
     const removeBasket=(id)=>{
         dispatch({type:'REMOVE_BASKET',itemId:id})
     }
+   
   return (
     <div className='checkoutProduct'>
             <img className='checkoutProduct__image' src={image} alt="noimage" />
@@ -14,7 +15,7 @@ function Checkoutproduct({id,image,title,price,rating}) {
                 <p className='checkoutProduct__title'>{title}</p>
                 <p className="checkoutProduct__price">
                     <small>$</small>
-                    <strong>{price}</strong>
+                    <strong>{price.toFixed(2)}</strong>
                 </p>
                 <div className="checkoutProduct__rating">
                     {Array(rating)
